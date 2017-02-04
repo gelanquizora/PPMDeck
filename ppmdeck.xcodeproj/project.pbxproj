@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E418BA601CA6C1D3004722C0 /* VideolistScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E418BA5F1CA6C1D3004722C0 /* VideolistScrollViewController.m */; };
+		E418BA631CA6D772004722C0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E418BA621CA6D772004722C0 /* TestViewController.m */; };
+		E45A5B311C4E8DA5001D447E /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45A5B301C4E8DA5001D447E /* CommentViewController.m */; };
+		E4C9E4851C380BEB008AD0A0 /* IconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C9E4841C380BEB008AD0A0 /* IconCell.m */; };
+		E4C9E48A1C383A9B008AD0A0 /* TopToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C9E4871C383A9B008AD0A0 /* TopToolbar.m */; };
+		E4C9E48B1C383A9B008AD0A0 /* UITransparentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C9E4891C383A9B008AD0A0 /* UITransparentToolbar.m */; };
+		E4C9E4901C3842A4008AD0A0 /* ActiveDeckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C9E48F1C3842A4008AD0A0 /* ActiveDeckViewController.m */; };
+		E4C9E4961C384902008AD0A0 /* BottomToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C9E4951C384902008AD0A0 /* BottomToolbar.m */; };
+		E4CC89881C318C6100329DDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC89871C318C6100329DDB /* main.m */; };
+		E4CC898B1C318C6100329DDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC898A1C318C6100329DDB /* AppDelegate.m */; };
+		E4CC898E1C318C6100329DDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC898D1C318C6100329DDB /* ViewController.m */; };
+		E4CC89911C318C6100329DDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CC898F1C318C6100329DDB /* Main.storyboard */; };
+		E4CC89941C318C6100329DDB /* ppmdeck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4CC89921C318C6100329DDB /* ppmdeck.xcdatamodeld */; };
+		E4CC89961C318C6100329DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CC89951C318C6100329DDB /* Assets.xcassets */; };
+		E4CC89991C318C6100329DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CC89971C318C6100329DDB /* LaunchScreen.storyboard */; };
+		E4CC89A41C318C6100329DDB /* ppmdeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC89A31C318C6100329DDB /* ppmdeckTests.m */; };
+		E4CC89AF1C318C6100329DDB /* ppmdeckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC89AE1C318C6100329DDB /* ppmdeckUITests.m */; };
+		E4CC89BF1C31A6AB00329DDB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC89BE1C31A6AB00329DDB /* LoginViewController.m */; };
+		E4CC89C21C31AC4200329DDB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC89C11C31AC4200329DDB /* User.m */; };
+		E4CC89C61C31ADE200329DDB /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CC89C51C31ADE200329DDB /* DashboardViewController.m */; };
+		E4F2AFFE1C8B1B3000F98195 /* NotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F2AFFD1C8B1B3000F98195 /* NotesListViewController.m */; };
+		E4F2B0011C8B3CD600F98195 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F2B0001C8B3CD600F98195 /* Page.m */; };
+		E4F2B7651C708E3800277FDB /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F2B7641C708E3800277FDB /* NotesViewController.m */; };
+		E4F2B7681C70A0A900277FDB /* RestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F2B7671C70A0A900277FDB /* RestAPI.m */; };
+		E4FC92931C838E2500706A55 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92881C838E2500706A55 /* ioapi.c */; };
+		E4FC92941C838E2500706A55 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC928A1C838E2500706A55 /* mztools.c */; };
+		E4FC92951C838E2500706A55 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC928C1C838E2500706A55 /* unzip.c */; };
+		E4FC92961C838E2500706A55 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC928E1C838E2500706A55 /* zip.c */; };
+		E4FC92971C838E2500706A55 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92911C838E2500706A55 /* SSZipArchive.m */; };
+		E4FC92AF1C838E3900706A55 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC929B1C838E3900706A55 /* aescrypt.c */; };
+		E4FC92B01C838E3900706A55 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC929C1C838E3900706A55 /* aeskey.c */; };
+		E4FC92B11C838E3900706A55 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC929E1C838E3900706A55 /* aestab.c */; };
+		E4FC92B21C838E3900706A55 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92A21C838E3900706A55 /* entropy.c */; };
+		E4FC92B31C838E3900706A55 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92A41C838E3900706A55 /* fileenc.c */; };
+		E4FC92B41C838E3900706A55 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92A61C838E3900706A55 /* hmac.c */; };
+		E4FC92B51C838E3900706A55 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92A81C838E3900706A55 /* prng.c */; };
+		E4FC92B61C838E3900706A55 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92AA1C838E3900706A55 /* pwd2key.c */; };
+		E4FC92B71C838E3900706A55 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = E4FC92AC1C838E3900706A55 /* sha1.c */; };
+		E4FC92B91C838F6700706A55 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FC92B81C838F6700706A55 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4CC89A01C318C6100329DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4CC897B1C318C6100329DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4CC89821C318C6100329DDB;
+			remoteInfo = ppmdeck;
+		};
+		E4CC89AB1C318C6100329DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4CC897B1C318C6100329DDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4CC89821C318C6100329DDB;
+			remoteInfo = ppmdeck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E418BA5E1CA6C1D3004722C0 /* VideolistScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideolistScrollViewController.h; sourceTree = "<group>"; };
+		E418BA5F1CA6C1D3004722C0 /* VideolistScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideolistScrollViewController.m; sourceTree = "<group>"; };
+		E418BA611CA6D772004722C0 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		E418BA621CA6D772004722C0 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		E45A5B2F1C4E8DA5001D447E /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		E45A5B301C4E8DA5001D447E /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		E4C9E4831C380BEB008AD0A0 /* IconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconCell.h; sourceTree = "<group>"; };
+		E4C9E4841C380BEB008AD0A0 /* IconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconCell.m; sourceTree = "<group>"; };
+		E4C9E4861C383A9B008AD0A0 /* TopToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopToolbar.h; sourceTree = "<group>"; };
+		E4C9E4871C383A9B008AD0A0 /* TopToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopToolbar.m; sourceTree = "<group>"; };
+		E4C9E4881C383A9B008AD0A0 /* UITransparentToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITransparentToolbar.h; sourceTree = "<group>"; };
+		E4C9E4891C383A9B008AD0A0 /* UITransparentToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITransparentToolbar.m; sourceTree = "<group>"; };
+		E4C9E48E1C3842A4008AD0A0 /* ActiveDeckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveDeckViewController.h; sourceTree = "<group>"; };
+		E4C9E48F1C3842A4008AD0A0 /* ActiveDeckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveDeckViewController.m; sourceTree = "<group>"; };
+		E4C9E4941C384902008AD0A0 /* BottomToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomToolbar.h; sourceTree = "<group>"; };
+		E4C9E4951C384902008AD0A0 /* BottomToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomToolbar.m; sourceTree = "<group>"; };
+		E4CC89831C318C6100329DDB /* ppmdeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ppmdeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CC89871C318C6100329DDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4CC89891C318C6100329DDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4CC898A1C318C6100329DDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4CC898C1C318C6100329DDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4CC898D1C318C6100329DDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4CC89901C318C6100329DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4CC89931C318C6100329DDB /* ppmdeck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ppmdeck.xcdatamodel; sourceTree = "<group>"; };
+		E4CC89951C318C6100329DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4CC89981C318C6100329DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4CC899A1C318C6100329DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CC899F1C318C6100329DDB /* ppmdeckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ppmdeckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CC89A31C318C6100329DDB /* ppmdeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ppmdeckTests.m; sourceTree = "<group>"; };
+		E4CC89A51C318C6100329DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CC89AA1C318C6100329DDB /* ppmdeckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ppmdeckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CC89AE1C318C6100329DDB /* ppmdeckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ppmdeckUITests.m; sourceTree = "<group>"; };
+		E4CC89B01C318C6100329DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CC89BD1C31A6AB00329DDB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E4CC89BE1C31A6AB00329DDB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E4CC89C01C31AC4200329DDB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E4CC89C11C31AC4200329DDB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E4CC89C41C31ADE200329DDB /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		E4CC89C51C31ADE200329DDB /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		E4F2AFFC1C8B1B3000F98195 /* NotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesListViewController.h; sourceTree = "<group>"; };
+		E4F2AFFD1C8B1B3000F98195 /* NotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesListViewController.m; sourceTree = "<group>"; };
+		E4F2AFFF1C8B3CD600F98195 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		E4F2B0001C8B3CD600F98195 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		E4F2B7631C708E3800277FDB /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesViewController.h; path = ../NotesViewController.h; sourceTree = "<group>"; };
+		E4F2B7641C708E3800277FDB /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesViewController.m; path = ../NotesViewController.m; sourceTree = "<group>"; };
+		E4F2B7661C70A0A900277FDB /* RestAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestAPI.h; sourceTree = "<group>"; };
+		E4F2B7671C70A0A900277FDB /* RestAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestAPI.m; sourceTree = "<group>"; };
+		E4FC92871C838E2500706A55 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		E4FC92881C838E2500706A55 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		E4FC92891C838E2500706A55 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		E4FC928A1C838E2500706A55 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		E4FC928B1C838E2500706A55 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		E4FC928C1C838E2500706A55 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		E4FC928D1C838E2500706A55 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		E4FC928E1C838E2500706A55 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		E4FC928F1C838E2500706A55 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		E4FC92901C838E2500706A55 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		E4FC92911C838E2500706A55 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		E4FC92921C838E2500706A55 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		E4FC92991C838E3900706A55 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		E4FC929A1C838E3900706A55 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		E4FC929B1C838E3900706A55 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		E4FC929C1C838E3900706A55 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		E4FC929D1C838E3900706A55 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		E4FC929E1C838E3900706A55 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		E4FC929F1C838E3900706A55 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		E4FC92A01C838E3900706A55 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		E4FC92A11C838E3900706A55 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		E4FC92A21C838E3900706A55 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		E4FC92A31C838E3900706A55 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		E4FC92A41C838E3900706A55 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		E4FC92A51C838E3900706A55 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		E4FC92A61C838E3900706A55 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		E4FC92A71C838E3900706A55 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		E4FC92A81C838E3900706A55 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		E4FC92A91C838E3900706A55 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		E4FC92AA1C838E3900706A55 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		E4FC92AB1C838E3900706A55 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		E4FC92AC1C838E3900706A55 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		E4FC92AD1C838E3900706A55 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		E4FC92AE1C838E3900706A55 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		E4FC92B81C838F6700706A55 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4CC89801C318C6100329DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FC92B91C838F6700706A55 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CC899C1C318C6100329DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CC89A71C318C6100329DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4C9E4811C380BB1008AD0A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E418BA611CA6D772004722C0 /* TestViewController.h */,
+				E418BA621CA6D772004722C0 /* TestViewController.m */,
+				E418BA5E1CA6C1D3004722C0 /* VideolistScrollViewController.h */,
+				E418BA5F1CA6C1D3004722C0 /* VideolistScrollViewController.m */,
+				E4F2B7631C708E3800277FDB /* NotesViewController.h */,
+				E4F2B7641C708E3800277FDB /* NotesViewController.m */,
+				E4CC898C1C318C6100329DDB /* ViewController.h */,
+				E4CC898D1C318C6100329DDB /* ViewController.m */,
+				E4CC89BD1C31A6AB00329DDB /* LoginViewController.h */,
+				E4CC89BE1C31A6AB00329DDB /* LoginViewController.m */,
+				E4CC89C41C31ADE200329DDB /* DashboardViewController.h */,
+				E4CC89C51C31ADE200329DDB /* DashboardViewController.m */,
+				E4C9E48E1C3842A4008AD0A0 /* ActiveDeckViewController.h */,
+				E4C9E48F1C3842A4008AD0A0 /* ActiveDeckViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E4C9E4821C380BC5008AD0A0 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E4C9E48D1C383AB6008AD0A0 /* Toolbar */,
+				E4C9E48C1C383AA2008AD0A0 /* Cell */,
+				E4F2B7661C70A0A900277FDB /* RestAPI.h */,
+				E4F2B7671C70A0A900277FDB /* RestAPI.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
+		E4C9E48C1C383AA2008AD0A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E4C9E4831C380BEB008AD0A0 /* IconCell.h */,
+				E4C9E4841C380BEB008AD0A0 /* IconCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		E4C9E48D1C383AB6008AD0A0 /* Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				E4C9E4861C383A9B008AD0A0 /* TopToolbar.h */,
+				E4C9E4871C383A9B008AD0A0 /* TopToolbar.m */,
+				E4C9E4881C383A9B008AD0A0 /* UITransparentToolbar.h */,
+				E4C9E4891C383A9B008AD0A0 /* UITransparentToolbar.m */,
+				E4C9E4941C384902008AD0A0 /* BottomToolbar.h */,
+				E4C9E4951C384902008AD0A0 /* BottomToolbar.m */,
+			);
+			name = Toolbar;
+			sourceTree = "<group>";
+		};
+		E4CC897A1C318C6100329DDB = {
+			isa = PBXGroup;
+			children = (
+				E4CC89851C318C6100329DDB /* ppmdeck */,
+				E4CC89A21C318C6100329DDB /* ppmdeckTests */,
+				E4CC89AD1C318C6100329DDB /* ppmdeckUITests */,
+				E4CC89841C318C6100329DDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4CC89841C318C6100329DDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4CC89831C318C6100329DDB /* ppmdeck.app */,
+				E4CC899F1C318C6100329DDB /* ppmdeckTests.xctest */,
+				E4CC89AA1C318C6100329DDB /* ppmdeckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4CC89851C318C6100329DDB /* ppmdeck */ = {
+			isa = PBXGroup;
+			children = (
+				E4FC92BA1C838F7700706A55 /* Zip */,
+				E4C9E4821C380BC5008AD0A0 /* Custom */,
+				E4C9E4811C380BB1008AD0A0 /* ViewControllers */,
+				E4CC89C31C31AC5200329DDB /* Entities */,
+				E4CC89891C318C6100329DDB /* AppDelegate.h */,
+				E4CC898A1C318C6100329DDB /* AppDelegate.m */,
+				E4CC898F1C318C6100329DDB /* Main.storyboard */,
+				E4F2AFFC1C8B1B3000F98195 /* NotesListViewController.h */,
+				E4F2AFFD1C8B1B3000F98195 /* NotesListViewController.m */,
+				E45A5B2F1C4E8DA5001D447E /* CommentViewController.h */,
+				E45A5B301C4E8DA5001D447E /* CommentViewController.m */,
+				E4CC89951C318C6100329DDB /* Assets.xcassets */,
+				E4CC89971C318C6100329DDB /* LaunchScreen.storyboard */,
+				E4CC899A1C318C6100329DDB /* Info.plist */,
+				E4CC89921C318C6100329DDB /* ppmdeck.xcdatamodeld */,
+				E4CC89861C318C6100329DDB /* Supporting Files */,
+			);
+			path = ppmdeck;
+			sourceTree = "<group>";
+		};
+		E4CC89861C318C6100329DDB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4CC89871C318C6100329DDB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CC89A21C318C6100329DDB /* ppmdeckTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4CC89A31C318C6100329DDB /* ppmdeckTests.m */,
+				E4CC89A51C318C6100329DDB /* Info.plist */,
+			);
+			path = ppmdeckTests;
+			sourceTree = "<group>";
+		};
+		E4CC89AD1C318C6100329DDB /* ppmdeckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4CC89AE1C318C6100329DDB /* ppmdeckUITests.m */,
+				E4CC89B01C318C6100329DDB /* Info.plist */,
+			);
+			path = ppmdeckUITests;
+			sourceTree = "<group>";
+		};
+		E4CC89C31C31AC5200329DDB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E4CC89C01C31AC4200329DDB /* User.h */,
+				E4CC89C11C31AC4200329DDB /* User.m */,
+				E4F2AFFF1C8B3CD600F98195 /* Page.h */,
+				E4F2B0001C8B3CD600F98195 /* Page.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		E4FC92861C838E2500706A55 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				E4FC92871C838E2500706A55 /* crypt.h */,
+				E4FC92881C838E2500706A55 /* ioapi.c */,
+				E4FC92891C838E2500706A55 /* ioapi.h */,
+				E4FC928A1C838E2500706A55 /* mztools.c */,
+				E4FC928B1C838E2500706A55 /* mztools.h */,
+				E4FC928C1C838E2500706A55 /* unzip.c */,
+				E4FC928D1C838E2500706A55 /* unzip.h */,
+				E4FC928E1C838E2500706A55 /* zip.c */,
+				E4FC928F1C838E2500706A55 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		E4FC92981C838E3900706A55 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				E4FC92991C838E3900706A55 /* aes.h */,
+				E4FC929A1C838E3900706A55 /* aes_via_ace.h */,
+				E4FC929B1C838E3900706A55 /* aescrypt.c */,
+				E4FC929C1C838E3900706A55 /* aeskey.c */,
+				E4FC929D1C838E3900706A55 /* aesopt.h */,
+				E4FC929E1C838E3900706A55 /* aestab.c */,
+				E4FC929F1C838E3900706A55 /* aestab.h */,
+				E4FC92A01C838E3900706A55 /* brg_endian.h */,
+				E4FC92A11C838E3900706A55 /* brg_types.h */,
+				E4FC92A21C838E3900706A55 /* entropy.c */,
+				E4FC92A31C838E3900706A55 /* entropy.h */,
+				E4FC92A41C838E3900706A55 /* fileenc.c */,
+				E4FC92A51C838E3900706A55 /* fileenc.h */,
+				E4FC92A61C838E3900706A55 /* hmac.c */,
+				E4FC92A71C838E3900706A55 /* hmac.h */,
+				E4FC92A81C838E3900706A55 /* prng.c */,
+				E4FC92A91C838E3900706A55 /* prng.h */,
+				E4FC92AA1C838E3900706A55 /* pwd2key.c */,
+				E4FC92AB1C838E3900706A55 /* pwd2key.h */,
+				E4FC92AC1C838E3900706A55 /* sha1.c */,
+				E4FC92AD1C838E3900706A55 /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		E4FC92BA1C838F7700706A55 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				E4FC92B81C838F6700706A55 /* libz.tbd */,
+				E4FC92981C838E3900706A55 /* aes */,
+				E4FC92AE1C838E3900706A55 /* Common.h */,
+				E4FC92861C838E2500706A55 /* minizip */,
+				E4FC92901C838E2500706A55 /* SSZipArchive.h */,
+				E4FC92911C838E2500706A55 /* SSZipArchive.m */,
+				E4FC92921C838E2500706A55 /* ZipArchive.h */,
+			);
+			name = Zip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4CC89821C318C6100329DDB /* ppmdeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CC89B31C318C6100329DDB /* Build configuration list for PBXNativeTarget "ppmdeck" */;
+			buildPhases = (
+				E4CC897F1C318C6100329DDB /* Sources */,
+				E4CC89801C318C6100329DDB /* Frameworks */,
+				E4CC89811C318C6100329DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ppmdeck;
+			productName = ppmdeck;
+			productReference = E4CC89831C318C6100329DDB /* ppmdeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4CC899E1C318C6100329DDB /* ppmdeckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CC89B61C318C6100329DDB /* Build configuration list for PBXNativeTarget "ppmdeckTests" */;
+			buildPhases = (
+				E4CC899B1C318C6100329DDB /* Sources */,
+				E4CC899C1C318C6100329DDB /* Frameworks */,
+				E4CC899D1C318C6100329DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4CC89A11C318C6100329DDB /* PBXTargetDependency */,
+			);
+			name = ppmdeckTests;
+			productName = ppmdeckTests;
+			productReference = E4CC899F1C318C6100329DDB /* ppmdeckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4CC89A91C318C6100329DDB /* ppmdeckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CC89B91C318C6100329DDB /* Build configuration list for PBXNativeTarget "ppmdeckUITests" */;
+			buildPhases = (
+				E4CC89A61C318C6100329DDB /* Sources */,
+				E4CC89A71C318C6100329DDB /* Frameworks */,
+				E4CC89A81C318C6100329DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4CC89AC1C318C6100329DDB /* PBXTargetDependency */,
+			);
+			name = ppmdeckUITests;
+			productName = ppmdeckUITests;
+			productReference = E4CC89AA1C318C6100329DDB /* ppmdeckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4CC897B1C318C6100329DDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Gereldyn Quizora";
+				TargetAttributes = {
+					E4CC89821C318C6100329DDB = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 59HED7Z32K;
+					};
+					E4CC899E1C318C6100329DDB = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = E4CC89821C318C6100329DDB;
+					};
+					E4CC89A91C318C6100329DDB = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = E4CC89821C318C6100329DDB;
+					};
+				};
+			};
+			buildConfigurationList = E4CC897E1C318C6100329DDB /* Build configuration list for PBXProject "ppmdeck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4CC897A1C318C6100329DDB;
+			productRefGroup = E4CC89841C318C6100329DDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4CC89821C318C6100329DDB /* ppmdeck */,
+				E4CC899E1C318C6100329DDB /* ppmdeckTests */,
+				E4CC89A91C318C6100329DDB /* ppmdeckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4CC89811C318C6100329DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CC89991C318C6100329DDB /* LaunchScreen.storyboard in Resources */,
+				E4CC89961C318C6100329DDB /* Assets.xcassets in Resources */,
+				E4CC89911C318C6100329DDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CC899D1C318C6100329DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CC89A81C318C6100329DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4CC897F1C318C6100329DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FC92B51C838E3900706A55 /* prng.c in Sources */,
+				E4FC92B41C838E3900706A55 /* hmac.c in Sources */,
+				E4FC92951C838E2500706A55 /* unzip.c in Sources */,
+				E4CC89941C318C6100329DDB /* ppmdeck.xcdatamodeld in Sources */,
+				E4C9E48A1C383A9B008AD0A0 /* TopToolbar.m in Sources */,
+				E4F2B7681C70A0A900277FDB /* RestAPI.m in Sources */,
+				E4C9E48B1C383A9B008AD0A0 /* UITransparentToolbar.m in Sources */,
+				E4CC898E1C318C6100329DDB /* ViewController.m in Sources */,
+				E4FC92B71C838E3900706A55 /* sha1.c in Sources */,
+				E4FC92961C838E2500706A55 /* zip.c in Sources */,
+				E4F2B7651C708E3800277FDB /* NotesViewController.m in Sources */,
+				E4FC92B31C838E3900706A55 /* fileenc.c in Sources */,
+				E45A5B311C4E8DA5001D447E /* CommentViewController.m in Sources */,
+				E4FC92B61C838E3900706A55 /* pwd2key.c in Sources */,
+				E4FC92941C838E2500706A55 /* mztools.c in Sources */,
+				E4CC89C21C31AC4200329DDB /* User.m in Sources */,
+				E4FC92B21C838E3900706A55 /* entropy.c in Sources */,
+				E4CC89C61C31ADE200329DDB /* DashboardViewController.m in Sources */,
+				E418BA631CA6D772004722C0 /* TestViewController.m in Sources */,
+				E4CC898B1C318C6100329DDB /* AppDelegate.m in Sources */,
+				E4F2B0011C8B3CD600F98195 /* Page.m in Sources */,
+				E4FC92B01C838E3900706A55 /* aeskey.c in Sources */,
+				E4FC92931C838E2500706A55 /* ioapi.c in Sources */,
+				E4C9E4961C384902008AD0A0 /* BottomToolbar.m in Sources */,
+				E4C9E4901C3842A4008AD0A0 /* ActiveDeckViewController.m in Sources */,
+				E4FC92971C838E2500706A55 /* SSZipArchive.m in Sources */,
+				E4CC89881C318C6100329DDB /* main.m in Sources */,
+				E4C9E4851C380BEB008AD0A0 /* IconCell.m in Sources */,
+				E418BA601CA6C1D3004722C0 /* VideolistScrollViewController.m in Sources */,
+				E4FC92AF1C838E3900706A55 /* aescrypt.c in Sources */,
+				E4FC92B11C838E3900706A55 /* aestab.c in Sources */,
+				E4F2AFFE1C8B1B3000F98195 /* NotesListViewController.m in Sources */,
+				E4CC89BF1C31A6AB00329DDB /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CC899B1C318C6100329DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CC89A41C318C6100329DDB /* ppmdeckTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CC89A61C318C6100329DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CC89AF1C318C6100329DDB /* ppmdeckUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4CC89A11C318C6100329DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4CC89821C318C6100329DDB /* ppmdeck */;
+			targetProxy = E4CC89A01C318C6100329DDB /* PBXContainerItemProxy */;
+		};
+		E4CC89AC1C318C6100329DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4CC89821C318C6100329DDB /* ppmdeck */;
+			targetProxy = E4CC89AB1C318C6100329DDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4CC898F1C318C6100329DDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4CC89901C318C6100329DDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4CC89971C318C6100329DDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4CC89981C318C6100329DDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4CC89B11C318C6100329DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E4CC89B21C318C6100329DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4CC89B41C318C6100329DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TeamApp, Inc. (59HED7Z32K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TeamApp, Inc. (59HED7Z32K)";
+				INFOPLIST_FILE = ppmdeck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamapp.ppmdeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4CC89B51C318C6100329DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TeamApp, Inc. (59HED7Z32K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TeamApp, Inc. (59HED7Z32K)";
+				INFOPLIST_FILE = ppmdeck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamapp.ppmdeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4CC89B71C318C6100329DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ppmdeckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamapp.ppmdeckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppmdeck.app/ppmdeck";
+			};
+			name = Debug;
+		};
+		E4CC89B81C318C6100329DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ppmdeckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamapp.ppmdeckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ppmdeck.app/ppmdeck";
+			};
+			name = Release;
+		};
+		E4CC89BA1C318C6100329DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ppmdeckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamapp.ppmdeckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ppmdeck;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E4CC89BB1C318C6100329DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ppmdeckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teamapp.ppmdeckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ppmdeck;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4CC897E1C318C6100329DDB /* Build configuration list for PBXProject "ppmdeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CC89B11C318C6100329DDB /* Debug */,
+				E4CC89B21C318C6100329DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4CC89B31C318C6100329DDB /* Build configuration list for PBXNativeTarget "ppmdeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CC89B41C318C6100329DDB /* Debug */,
+				E4CC89B51C318C6100329DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4CC89B61C318C6100329DDB /* Build configuration list for PBXNativeTarget "ppmdeckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CC89B71C318C6100329DDB /* Debug */,
+				E4CC89B81C318C6100329DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4CC89B91C318C6100329DDB /* Build configuration list for PBXNativeTarget "ppmdeckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CC89BA1C318C6100329DDB /* Debug */,
+				E4CC89BB1C318C6100329DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E4CC89921C318C6100329DDB /* ppmdeck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E4CC89931C318C6100329DDB /* ppmdeck.xcdatamodel */,
+			);
+			currentVersion = E4CC89931C318C6100329DDB /* ppmdeck.xcdatamodel */;
+			path = ppmdeck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E4CC897B1C318C6100329DDB /* Project object */;
+}
