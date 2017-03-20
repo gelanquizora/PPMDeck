@@ -1,0 +1,73 @@
+-(IBAction)login:(id)sender
+{
+ 
+ 
+ 
+ 
+    //Team App temp server http://182.18.253.242/
+    //my local 172.16.50.128
+    //old 54.169.130.130:9393
+    NSString *str = [NSString stringWithFormat:@"http://192.168.254.103/RestService/RestServiceImpl.svc/login/%@/%@", _txtUsername.text, _txtPassword.text];
+    // @"http://content.guardianapis.com/search?api-key=test";
+    NSURL *url = [NSURL URLWithString:str];
+    
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    [[session dataTaskWithURL: url
+            completionHandler:^(NSData *data,
+                                NSURLResponse *response,
+                                NSError *error) {
+                // handle response
+                
+                if (error) {
+                    NSLog(@"dataTaskWithRequest error: %@", error);
+                    return;
+                }
+                
+                // handle HTTP errors here
+                
+                if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+                    
+                    NSInteger statusCode = [(NSHTTPURLResponse *)response statusCode];
+                    
+                    if (statusCode != 200) {
+                        NSLog(@"dataTaskWithRequest HTTP status code: %ld", statusCode);
+                        return;
+                    }
+                }
+                
+                
+                //Parse the result
+                NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+                if (error)
+                    NSLog(@"JSONObjectWithData error: %@", error);
+                
+                NSDictionary *userinfo = (NSDictionary*)[dictionary objectForKey:@"LoginResult"];
+                if([[userinfo objectForKey:@"ActiveDeckID"] intValue]== 0){
+                    NSLog(@"No record found.");
+                }else
+                {
+                    NSLog(@"LOGGED IN SUCCESSFULLY ");
+                    
+                   // [self startResumableDownloadWith:[userinfo objectForKey:@"ActiveDeckURL"]];
+                    [self startResumableDownloadWith: @"http://192.168.254.103/PPM/27/1.zip"];
+                    
+                    NSUserDefaults *saveDetails = [NSUserDefaults standardUserDefaults];
+                    //Get Login name
+                    
+                    //Get and store Videos
+                    [saveDetails setObject:[userinfo objectForKey:@"Videos"]  forKey:@"Videos"];
+                    //Get Presentation name
+                    [saveDetails setObject:[userinfo objectForKey:@"ActiveDeckTitle"]  forKey:@"ActiveDeckTitle"];
+                    
+                    //Get Director's Treatment Passcode
+                    [saveDetails setObject:[userinfo objectForKey:@"Passcode"]  forKey:@"Passcode"];
+                    [saveDetails synchronize];
+                }
+                
+            }] resume];
+    
+    
+
+}
